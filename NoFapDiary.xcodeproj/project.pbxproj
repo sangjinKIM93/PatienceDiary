@@ -14,7 +14,23 @@
 		488E2F1324FBDB83002D8731 /* NoFapDiary.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 488E2F1124FBDB83002D8731 /* NoFapDiary.xcdatamodeld */; };
 		488E2F1524FBDB83002D8731 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 488E2F1424FBDB83002D8731 /* Assets.xcassets */; };
 		488E2F1824FBDB83002D8731 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 488E2F1624FBDB83002D8731 /* LaunchScreen.storyboard */; };
+		488E2F2124FBE08C002D8731 /* HGCircularSlider.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 488E2F2024FBE08C002D8731 /* HGCircularSlider.framework */; };
+		488E2F2224FBE08C002D8731 /* HGCircularSlider.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 488E2F2024FBE08C002D8731 /* HGCircularSlider.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		488E2F2324FBE08C002D8731 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				488E2F2224FBE08C002D8731 /* HGCircularSlider.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		488E2F0524FBDB83002D8731 /* NoFapDiary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NoFapDiary.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -26,6 +42,7 @@
 		488E2F1424FBDB83002D8731 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		488E2F1724FBDB83002D8731 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		488E2F1924FBDB83002D8731 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		488E2F2024FBE08C002D8731 /* HGCircularSlider.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HGCircularSlider.framework; path = Carthage/Build/iOS/HGCircularSlider.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +50,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				488E2F2124FBE08C002D8731 /* HGCircularSlider.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +62,7 @@
 			children = (
 				488E2F0724FBDB83002D8731 /* NoFapDiary */,
 				488E2F0624FBDB83002D8731 /* Products */,
+				488E2F1F24FBE08C002D8731 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -70,6 +89,14 @@
 			path = NoFapDiary;
 			sourceTree = "<group>";
 		};
+		488E2F1F24FBE08C002D8731 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				488E2F2024FBE08C002D8731 /* HGCircularSlider.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -80,6 +107,8 @@
 				488E2F0124FBDB83002D8731 /* Sources */,
 				488E2F0224FBDB83002D8731 /* Frameworks */,
 				488E2F0324FBDB83002D8731 /* Resources */,
+				488E2F2324FBE08C002D8731 /* Embed Frameworks */,
+				488E2F2424FBE0D6002D8731 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -135,6 +164,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		488E2F2424FBE0D6002D8731 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/HGCircularSlider.framework",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		488E2F0124FBDB83002D8731 /* Sources */ = {
@@ -289,6 +339,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = NoFapDiary/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -306,6 +360,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = NoFapDiary/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

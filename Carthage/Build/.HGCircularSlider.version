@@ -1,0 +1,20 @@
+{
+  "Mac" : [
+
+  ],
+  "watchOS" : [
+
+  ],
+  "tvOS" : [
+
+  ],
+  "commitish" : "2.2.1",
+  "iOS" : [
+    {
+      "hash" : "0951028fdae17a8e8f3c3d44c5a4489e69bb8dc8c0d82b62f48eab0a6e187ed9",
+      "name" : "HGCircularSlider",
+      "linking" : "dynamic",
+      "swiftToolchainVersion" : "5.2.4 (swiftlang-1103.0.32.9 clang-1103.0.32.53)"
+    }
+  ]
+}
