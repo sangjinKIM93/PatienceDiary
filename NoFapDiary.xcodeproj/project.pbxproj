@@ -7,9 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		480FE2E524FE843800A07A62 /* CounterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480FE2E424FE843800A07A62 /* CounterViewController.swift */; };
+		480FE2E824FE84C600A07A62 /* StatisticsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480FE2E724FE84C600A07A62 /* StatisticsViewController.swift */; };
 		488E2F0924FBDB83002D8731 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488E2F0824FBDB83002D8731 /* AppDelegate.swift */; };
 		488E2F0B24FBDB83002D8731 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488E2F0A24FBDB83002D8731 /* SceneDelegate.swift */; };
-		488E2F0D24FBDB83002D8731 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488E2F0C24FBDB83002D8731 /* ViewController.swift */; };
 		488E2F1024FBDB83002D8731 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 488E2F0E24FBDB83002D8731 /* Main.storyboard */; };
 		488E2F1324FBDB83002D8731 /* NoFapDiary.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 488E2F1124FBDB83002D8731 /* NoFapDiary.xcdatamodeld */; };
 		488E2F1524FBDB83002D8731 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 488E2F1424FBDB83002D8731 /* Assets.xcassets */; };
@@ -33,10 +34,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		480FE2E424FE843800A07A62 /* CounterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterViewController.swift; sourceTree = "<group>"; };
+		480FE2E724FE84C600A07A62 /* StatisticsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsViewController.swift; sourceTree = "<group>"; };
 		488E2F0524FBDB83002D8731 /* NoFapDiary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NoFapDiary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		488E2F0824FBDB83002D8731 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		488E2F0A24FBDB83002D8731 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		488E2F0C24FBDB83002D8731 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		488E2F0F24FBDB83002D8731 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		488E2F1224FBDB83002D8731 /* NoFapDiary.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NoFapDiary.xcdatamodel; sourceTree = "<group>"; };
 		488E2F1424FBDB83002D8731 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -57,6 +59,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		480FE2E324FE841100A07A62 /* Counter */ = {
+			isa = PBXGroup;
+			children = (
+				480FE2E424FE843800A07A62 /* CounterViewController.swift */,
+			);
+			path = Counter;
+			sourceTree = "<group>";
+		};
+		480FE2E624FE847300A07A62 /* Statistics */ = {
+			isa = PBXGroup;
+			children = (
+				480FE2E724FE84C600A07A62 /* StatisticsViewController.swift */,
+			);
+			path = Statistics;
+			sourceTree = "<group>";
+		};
 		488E2EFC24FBDB83002D8731 = {
 			isa = PBXGroup;
 			children = (
@@ -77,9 +95,10 @@
 		488E2F0724FBDB83002D8731 /* NoFapDiary */ = {
 			isa = PBXGroup;
 			children = (
+				480FE2E624FE847300A07A62 /* Statistics */,
+				480FE2E324FE841100A07A62 /* Counter */,
 				488E2F0824FBDB83002D8731 /* AppDelegate.swift */,
 				488E2F0A24FBDB83002D8731 /* SceneDelegate.swift */,
-				488E2F0C24FBDB83002D8731 /* ViewController.swift */,
 				488E2F0E24FBDB83002D8731 /* Main.storyboard */,
 				488E2F1424FBDB83002D8731 /* Assets.xcassets */,
 				488E2F1624FBDB83002D8731 /* LaunchScreen.storyboard */,
@@ -191,8 +210,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				480FE2E524FE843800A07A62 /* CounterViewController.swift in Sources */,
 				488E2F1324FBDB83002D8731 /* NoFapDiary.xcdatamodeld in Sources */,
-				488E2F0D24FBDB83002D8731 /* ViewController.swift in Sources */,
+				480FE2E824FE84C600A07A62 /* StatisticsViewController.swift in Sources */,
 				488E2F0924FBDB83002D8731 /* AppDelegate.swift in Sources */,
 				488E2F0B24FBDB83002D8731 /* SceneDelegate.swift in Sources */,
 			);
