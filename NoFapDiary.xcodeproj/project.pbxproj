@@ -17,6 +17,7 @@
 		488E2F1824FBDB83002D8731 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 488E2F1624FBDB83002D8731 /* LaunchScreen.storyboard */; };
 		488E2F2124FBE08C002D8731 /* HGCircularSlider.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 488E2F2024FBE08C002D8731 /* HGCircularSlider.framework */; };
 		488E2F2224FBE08C002D8731 /* HGCircularSlider.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 488E2F2024FBE08C002D8731 /* HGCircularSlider.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		48DF1EA02506737E005205E1 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48DF1E9F2506737E005205E1 /* UIColor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -45,6 +46,7 @@
 		488E2F1724FBDB83002D8731 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		488E2F1924FBDB83002D8731 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		488E2F2024FBE08C002D8731 /* HGCircularSlider.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HGCircularSlider.framework; path = Carthage/Build/iOS/HGCircularSlider.framework; sourceTree = "<group>"; };
+		48DF1E9F2506737E005205E1 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +97,7 @@
 		488E2F0724FBDB83002D8731 /* NoFapDiary */ = {
 			isa = PBXGroup;
 			children = (
+				48DF1E9E2506736A005205E1 /* Extension */,
 				480FE2E624FE847300A07A62 /* Statistics */,
 				480FE2E324FE841100A07A62 /* Counter */,
 				488E2F0824FBDB83002D8731 /* AppDelegate.swift */,
@@ -114,6 +117,14 @@
 				488E2F2024FBE08C002D8731 /* HGCircularSlider.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		48DF1E9E2506736A005205E1 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				48DF1E9F2506737E005205E1 /* UIColor.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -211,6 +222,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				480FE2E524FE843800A07A62 /* CounterViewController.swift in Sources */,
+				48DF1EA02506737E005205E1 /* UIColor.swift in Sources */,
 				488E2F1324FBDB83002D8731 /* NoFapDiary.xcdatamodeld in Sources */,
 				480FE2E824FE84C600A07A62 /* StatisticsViewController.swift in Sources */,
 				488E2F0924FBDB83002D8731 /* AppDelegate.swift in Sources */,
